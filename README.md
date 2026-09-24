@@ -1,27 +1,30 @@
-# PGC
-# Sequential Matrix Multiplication
+# PGC Lab
 
-## Description
+## Experiment 1 
+
+## Sequential Matrix Multiplication
+
+### Description
 
 This experiment implements sequential matrix multiplication using the C programming language. Two 4000 × 4000 matrices are initialized and multiplied using the standard three nested-loop approach.
 
 The computation is performed sequentially using a single CPU execution flow. The execution time is measured to establish a baseline for performance comparison with parallel implementations.
 
-## Objective
+### Objective
 
 - To implement matrix multiplication using sequential execution.
 - To measure the execution time of matrix multiplication.
 - To establish a baseline execution time for comparison with parallel implementations.
 - To verify the correctness of the matrix multiplication result.
 
-## Environment
+### Environment
 
 - Operating System: Ubuntu on WSL2
 - Programming Language: C
 - Compiler: GCC
 - Matrix Size: 4000 × 4000
 
-## Result
+### Result
 
 - Matrix Size: 4000 × 4000
 - Execution Time: 244.120000 seconds
@@ -29,9 +32,9 @@ The computation is performed sequentially using a single CPU execution flow. The
 
 The sequential execution time is used as the baseline for calculating the speedup of parallel implementations.
 
-# OpenMP Matrix Multiplication
+## OpenMP Matrix Multiplication
 
-## Description
+### Description
 
 This experiment implements parallel matrix multiplication using OpenMP and the C programming language. Two 4000 × 4000 matrices are initialized and multiplied using multiple CPU threads on a shared-memory system.
 
@@ -39,7 +42,7 @@ OpenMP is used to distribute the outer loop iterations among multiple threads, a
 
 The performance of the OpenMP implementation is compared with the sequential implementation to determine the speedup achieved through parallel execution.
 
-## Objective
+### Objective
 
 - To implement matrix multiplication using OpenMP.
 - To understand parallel execution using multiple CPU threads.
@@ -47,7 +50,7 @@ The performance of the OpenMP implementation is compared with the sequential imp
 - To compare OpenMP performance with the sequential baseline.
 - To calculate the speedup obtained through parallel execution.
 
-## Environment
+### Environment
 
 - Operating System: Ubuntu on WSL2
 - Programming Language: C
@@ -56,7 +59,7 @@ The performance of the OpenMP implementation is compared with the sequential imp
 - Matrix Size: 4000 × 4000
 - Number of Threads: 8
 
-## Result
+### Result
 
 - Matrix Size: 4000 × 4000
 - Number of Threads: 8
